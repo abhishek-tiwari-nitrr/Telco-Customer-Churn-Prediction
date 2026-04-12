@@ -1,0 +1,7 @@
+pytest
+pytest-cov
+scikit-learn
+imbalanced-learn
+pandas
+numpy
+joblib
