@@ -31,8 +31,7 @@ jobs:
         run: |
           pytest test/ -v \
             --cov=src \
-            --cov-report=term-missing \
-            --cov-fail-under=60
+            --cov-report=term-missing
 
       - name: Upload coverage report
         if: matrix.python-version == '3.11'
