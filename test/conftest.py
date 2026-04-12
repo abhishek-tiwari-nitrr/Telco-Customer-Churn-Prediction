@@ -29,12 +29,6 @@ REQUIRED_COLUMNS = [
 ]
 NUMERIC_COLUMNS = ["seniorcitizen", "tenure", "monthlycharges", "totalcharges"]
 CATEGORICAL_COLUMNS = [c for c in REQUIRED_COLUMNS if c not in NUMERIC_COLUMNS]
-NUMERIC_BOUNDS = {
-    "tenure": (0, 100),
-    "monthlycharges": (0, 200),
-    "totalcharges": (0, 20000),
-    "seniorcitizen": (0, 1),
-}
 VALID_CATEGORIES = {
     "gender": ["Male", "Female"],
     "partner": ["Yes", "No"],

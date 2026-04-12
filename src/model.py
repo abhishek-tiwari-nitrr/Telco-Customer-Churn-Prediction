@@ -44,8 +44,9 @@ class ChurnModel:
     _instance = None  # to store single instance of the class - class variable
 
     def __new__(cls):
-        cls._instance = super().__new__(cls)  # create a fresh instance of Singleton
-        cls._instance._loaded = False  # initial state
+        if cls._instance is None:
+            cls._instance = super().__new__(cls)  # create a fresh instance of Singleton
+            cls._instance._loaded = False  # initial state
         return cls._instance
 
     def load(self):

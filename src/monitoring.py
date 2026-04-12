@@ -1,6 +1,6 @@
 import pandas as pd
 from dataclasses import dataclass
-from typing import List
+from typing import List, Dict
 from src.config import (
     TRAINING_STATS,
     NUMERIC_COLUMNS,
