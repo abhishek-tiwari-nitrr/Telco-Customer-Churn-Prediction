@@ -1,0 +1,23 @@
+# python 
+__pycache__/
+
+# notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+notebooks/eda.ipynb
+notebooks/ml.ipynb
+
+# data
+data/*.db
+data/*.json
+
+# figures and eda report
+reports/figures/*
+reports/*.pdf
+
+# logs
+logs/
+*.log
+
+# folder
+experiment/
