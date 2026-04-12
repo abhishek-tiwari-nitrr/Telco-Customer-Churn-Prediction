@@ -15,7 +15,7 @@ This system predicts churn probability **before** the customer leaves, enabling 
 | Metric | Value |
 |---|---|
 | Dataset | 7,032 Telco customers |
-| Actual churn rate | 26.5% → 1,869 churners |
+| Actual churn rate | 26.5% -> 1,869 churners |
 | Churners caught by model (Recall 77.3%) | ~1,434 customers |
 | Average Customer Lifetime Value | Rs. 1,500 |
 | Revenue protected per cycle | **Rs. 21.5 lakh** |
@@ -36,11 +36,7 @@ This system predicts churn probability **before** the customer leaves, enabling 
 | Accuracy | 0.7743 | — |
 | CV AUC-ROC (5-fold) | 0.8480 | — |
  
-> **Note on CV AUC-ROC:** The final GridSearchCV uses `scoring="roc_auc"`, so the 5-fold
-> cross-validated score of 0.8480 is **AUC-ROC**, not Recall. Earlier versions of this README
-> incorrectly labelled this figure as "CV Recall (5-fold)".
- 
-**SMOTE impact:** Recall improved from 0.546 → 0.773 (+41.6%) by oversampling the minority class (26.5% churn rate) during training.
+**SMOTE impact:** Recall improved from 0.546 -> 0.773 (+41.6%) by oversampling the minority class (26.5% churn rate) during training.
  
 ### Top Churn Drivers (Cramér's V)
  
@@ -52,9 +48,6 @@ This system predicts churn probability **before** the customer leaves, enabling 
 | `techsupport` | V = 0.336 | No support: 41.6% churn vs Yes: 15.2% |
 | `internetservice` | V = 0.331 | Fiber optic: 41.9% churn (highest) |
 | `paymentmethod` | V = 0.316 | Electronic check: 45.3% churn (highest) |
- 
-> `tenure_group` is an EDA binning feature (0-12, 13-24 … months). It is used for analysis only
-> and is **not** an input to the production model, which uses raw `tenure`.
 
 ---
 
@@ -128,10 +121,10 @@ pytest test/ -v
  
 See [`docs/DECISIONS.md`](docs/DECISIONS.md) for the full decision log. Summary:
  
-- **AdaBoost over XGBoost** — highest CV AUC-ROC (0.8403 vs 0.8238), simpler hyperparameter space, faster inference
-- **SMOTE over class_weight** — +41.6% recall improvement justified the pipeline complexity
-- **SQLite over PostgreSQL** — audit trail requirement met without operational overhead for this scale
-- **OneHotEncoder** — production preprocessor uses OHE (`sparse_output=False`); top 20 SHAP-selected features are then used for inference
+- **AdaBoost over XGBoost** - highest CV AUC-ROC (0.8403 vs 0.8238), simpler hyperparameter space, faster inference
+- **SMOTE over class_weight** - +41.6% recall improvement justified the pipeline complexity
+- **SQLite over PostgreSQL** - audit trail requirement met without operational overhead for this scale
+- **OneHotEncoder** - production preprocessor uses OHE (`sparse_output=False`); top 20 SHAP-selected features are then used for inference
  
 ---
  
@@ -140,7 +133,7 @@ See [`docs/DECISIONS.md`](docs/DECISIONS.md) for the full decision log. Summary:
 | Layer | Technology |
 |---|---|
 | ML | scikit-learn, imbalanced-learn (SMOTE), joblib |
-| Explainability | SHAP (KernelExplainer — feature selection during training) |
+| Explainability | SHAP (KernelExplainer - feature selection during training) |
 | App | Streamlit |
 | Data | Pandas, NumPy |
 | Testing | pytest |
