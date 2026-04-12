@@ -26,6 +26,7 @@ This system predicts churn probability **before** the customer leaves, enabling 
 
 
 ## Model Performance
+See [`docs/MODEL_CARD.md`](docs/MODEL_CARD.md).
  
 | Metric | Score | Benchmark |
 |---|---|---|
