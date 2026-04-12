@@ -7,7 +7,7 @@ st.caption("END-TO-END ML PROJECT - V1.0.0")
 st.title("🛰️ Telco Customer Churn Prediction System")
 
 st.write(
-    "A production-grade ML application — EDA, 25-model benchmark, SMOTE, hyperparameter tuning, SHAP explainability, drift detection and customer-level audit logging."
+    "A ML application - EDA, 25-model benchmark, SMOTE, hyperparameter tuning, SHAP explainability, drift detection and customer-level audit logging."
 )
 
 cols = st.columns(5)

@@ -21,3 +21,6 @@ logs/
 
 # folder
 experiment/
+
+# env
+churn/
