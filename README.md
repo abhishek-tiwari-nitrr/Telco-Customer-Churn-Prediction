@@ -128,6 +128,12 @@ See [`docs/DECISIONS.md`](docs/DECISIONS.md) for the full decision log. Summary:
 - **OneHotEncoder** - production preprocessor uses OHE (`sparse_output=False`); top 20 SHAP-selected features are then used for inference
  
 ---
+
+## Demo
+
+![Demo](reports/Demo.gif)
+
+---
  
 ## Tech Stack
  
