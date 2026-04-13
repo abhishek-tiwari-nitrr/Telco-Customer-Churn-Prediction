@@ -129,7 +129,9 @@ See [`docs/DECISIONS.md`](docs/DECISIONS.md) for the full decision log. Summary:
  
 ---
 
-## Demo
+## Demo 
+
+View Complete Demo [`Demo`](reports/Demo.mkv)
 
 ![Demo](reports/Demo.gif)
 
