@@ -1,8 +1,10 @@
 # Telco Customer Churn Prediction
 
+[![Python 3.11+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
+[![Live App](https://img.shields.io/badge/Live%20App-Streamlit-brightgreen)](https://abhishek-tiwari-nitrr-churn-prediction.streamlit.app/)
+
 > **End-to-end ML system** that identifies customers at risk of churning, quantifies business impact and serves predictions through Streamlit application with drift monitoring and audit logging.
 
-[![Python 3.11+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
 
 ## Business Problem
 
@@ -132,6 +134,8 @@ See [`docs/DECISIONS.md`](docs/DECISIONS.md) for the full decision log. Summary:
 ## Demo 
 
 View Complete Demo [`Demo`](reports/Demo.mkv)
+
+**Live Streamlit App:** https://abhishek-tiwari-nitrr-churn-prediction.streamlit.app/
 
 ![Demo](reports/Demo.gif)
 
