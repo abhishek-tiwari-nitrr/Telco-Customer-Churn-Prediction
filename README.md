@@ -131,13 +131,10 @@ See [`docs/DECISIONS.md`](docs/DECISIONS.md) for the full decision log. Summary:
  
 ---
 
-## Demo 
 
-View Complete Demo [`Demo`](reports/Demo.mkv)
+## 📺 Demo
 
-**Live Streamlit App:** https://abhishek-tiwari-nitrr-churn-prediction.streamlit.app/
-
-![Demo](reports/Demo.gif)
+[![Telco Customer Churn Prediction Demo](https://img.youtube.com/vi/LfmpoiXrcko/maxresdefault.jpg)](https://youtu.be/LfmpoiXrcko)
 
 ---
  
@@ -145,10 +142,10 @@ View Complete Demo [`Demo`](reports/Demo.mkv)
  
 | Layer | Technology |
 |---|---|
+| UI | Streamlit |
+| Data | Pandas, NumPy |
 | ML | scikit-learn, imbalanced-learn (SMOTE), joblib |
 | Explainability | SHAP (KernelExplainer - feature selection during training) |
-| App | Streamlit |
-| Data | Pandas, NumPy |
 | Testing | pytest |
 | Logging | Python logging (RotatingFileHandler) |
 | Storage | SQLite (audit trail) |
